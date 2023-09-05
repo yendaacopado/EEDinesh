@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Profile xmlns="http://soap.sforce.com/2006/04/metadata">
+<Profile xmlns="http://soap.sforce.com/2006/04/metadata"
+      xmlns:n1="http://www.w3.org/2001/XMLSchema-instance">
     <applicationVisibilities>
         <application>Express_Setup</application>
         <default>false</default>
@@ -11483,6 +11484,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>Test_EE1__c.Express1__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>User.copado__API_URL__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -17864,6 +17870,9 @@
         <layout>Task-Formato de tareas</layout>
     </layoutAssignments>
     <layoutAssignments>
+        <layout>Test_EE1__c-Test EE1 Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
         <layout>User-Formato de usuario</layout>
     </layoutAssignments>
     <layoutAssignments>
@@ -17929,6 +17938,7 @@
     <layoutAssignments>
         <layout>copadovsm__Value_Stream_Map_Snapshot__c-copadovsm__Value Stream Map Snapshot Layout</layout>
     </layoutAssignments>
+    <loginHours n1:nil="true" />
     <loginIpRanges>
         <description>All</description>
         <endAddress>255.255.255.255</endAddress>
@@ -18490,6 +18500,15 @@
         <allowRead>true</allowRead>
         <modifyAllRecords>true</modifyAllRecords>
         <object>StreamingChannel</object>
+        <viewAllRecords>true</viewAllRecords>
+    </objectPermissions>
+    <objectPermissions>
+        <allowCreate>true</allowCreate>
+        <allowDelete>true</allowDelete>
+        <allowEdit>true</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>true</modifyAllRecords>
+        <object>Test_EE1__c</object>
         <viewAllRecords>true</viewAllRecords>
     </objectPermissions>
     <objectPermissions>
@@ -21673,10 +21692,6 @@
     <userPermissions>
         <enabled>true</enabled>
         <name>Packaging2Delete</name>
-    </userPermissions>
-    <userPermissions>
-        <enabled>true</enabled>
-        <name>Packaging2PromoteVersion</name>
     </userPermissions>
     <userPermissions>
         <enabled>true</enabled>
